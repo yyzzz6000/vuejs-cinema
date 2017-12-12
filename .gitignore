@@ -4,3 +4,5 @@ npm-debug.log
 .idea
 .env
 dist
+src/myComponent.js
+package-lock.json
