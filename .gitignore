@@ -6,3 +6,6 @@ npm-debug.log
 dist
 src/myComponent.js
 package-lock.json
+webpack.test.config.js
+webpack.base.config.js
+test/coverage
