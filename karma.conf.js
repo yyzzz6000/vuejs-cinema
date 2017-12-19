@@ -20,8 +20,7 @@ module.exports = function(config) {
         files: ['./test/unit/index.js'],
         // we will pass the entry file to webpack for bundling.
         preprocessors: {
-            './test/unit/index.js': ['webpack'],
-            './test/unit/specs/*.spec.js': ['babel']
+            './test/unit/index.js': ['webpack']
         },
         coverageReporter: {
             dir: './test/coverage',

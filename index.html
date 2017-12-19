@@ -19,9 +19,14 @@
         <h1>Vue.js Cinema</h1>
     </div>
     <div id="overview">
-        <div class="main" v-on:check-filter="toggleFitler">
-            <movie-list v-bind:genre='genre' v-bind:time='time'></movie-list>
-            <movie-filter v-on:check-filter="toggleFitler"></movie-filter>
+        <div class="main" v-on:check-filter="toggleFilter">
+            <movie-list 
+                v-bind:genre='genre' 
+                v-bind:time='time' 
+                v-bind:movies='movies'
+                v-bind:day='day'></movie-list>
+            <movie-filter 
+                v-on:check-filter="toggleFilter"></movie-filter>
         </div>
     </div>
 </div>

@@ -5,6 +5,8 @@ const app = express();
 const path = require('path');
 const fs = require('fs');
 const api = require('./api');
+const moment = require('./node_modules/moment');
+moment.tz.setDefault('UTC');
 
 if (process.env.NODE_ENV === 'development') {
   require('./webpack-dev-middleware').init(app);
